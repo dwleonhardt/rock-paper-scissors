@@ -10,7 +10,7 @@
 
 function playGame() {
   var computer = ['rock', 'paper', 'scissors'];
-  var compChoice = computer[Math.ceil(Math.random() * 2)];
+  var compChoice = computer[Math.floor(Math.random() * 3)];
   var playChoice = prompt('Rock, Paper, Scissors, shoot...');
   if (playChoice === 'rock') {
     if (compChoice === 'scissors') {
